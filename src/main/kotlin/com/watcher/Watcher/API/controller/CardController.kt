@@ -16,12 +16,12 @@ class CardController {
     }
 
     @PostMapping("/")
-    fun addCard(card: Card): Card {
+    fun addCard(@PathVariable card: Card): Card {
         return cardRepository.save(card)
     }
 
     @DeleteMapping("/{id}")
-    fun delete(id: Long) {
+    fun delete(@RequestBody id: Long) {
         if(!cardRepository.existsById(id)) throw NoSuchElementException("Card id: $id not found.")
         cardRepository.deleteById(id)
     }

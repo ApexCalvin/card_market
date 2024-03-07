@@ -9,7 +9,7 @@ data class Card(
     var id: Long = 0,
     var name: String = "",
     var rarity: Char = 'C',
-    var set: String = "",
+    var expansion: String = "",
     var foil: Boolean = false,
     var purchasePrice: Double = 00.00
 )
