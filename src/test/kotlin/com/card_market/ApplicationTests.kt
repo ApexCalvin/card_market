@@ -1,4 +1,4 @@
-package com.watcher.Watcher.API
+package com.card_market
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
