@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <!--<link rel="stylesheet" type="text/css" href="styles/style.css">-->
         <meta charset="UTF-8">
         <title>card market</title>
     </head>
     <body>
-        <p>card market</p>
+        <h2 style="text-align: center;">card market</h2>
+        <br>
+        <br>
+
+        <div class="input" id="input">
+            <form style="text-align: center;">
+                <input id="card_set" placeholder="SET">
+                <br>
+                <br>
+                <input id="card_collector_number" placeholder="COLLECTOR NUMBER">
+                <br>
+                <br>
+                <input id="card_purchase_price" placeholder="PURCHASE PRICE">
+                <br>
+                <br>
+                <button onClick="saveCard()">Save</button>
+            </form>
+            <br>
+            <br>
+            <button style="text-align: center;" onClick="getCards()">Get</button>
+        </div>
+
+        <div class="output" id="output">
+            <p style="text-align: center;" >display</p>
+        </div>
         <!--
-
-        input section
-        button section
-        display section
-
-         field = set
-         field = collector_number
-         field = purchasePrice
-
-         button = save
 
          button = getAll
             onClick = get card,

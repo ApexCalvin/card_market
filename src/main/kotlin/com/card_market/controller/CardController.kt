@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("/watcher")
+@RequestMapping("/cardmarket")
 class CardController {
     @Autowired
     lateinit var cardRepository: CardRepository
