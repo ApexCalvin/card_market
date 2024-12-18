@@ -1,6 +1,6 @@
-package com.watcher.Watcher.API.repository
+package com.card_market.repository
 
-import com.watcher.Watcher.API.entity.Card
+import com.card_market.entity.Card
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 

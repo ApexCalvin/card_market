@@ -1,11 +1,10 @@
-package com.watcher.Watcher.API.controller
+package com.card_market.controller
 
-import com.watcher.Watcher.API.entity.Card
-import com.watcher.Watcher.API.repository.CardRepository
+import com.card_market.entity.Card
+import com.card_market.repository.CardRepository
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.http.HttpStatus
-import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
+
 @RestController
 @RequestMapping("/watcher")
 class CardController {
@@ -23,8 +22,8 @@ class CardController {
     }
 
     @DeleteMapping("/{id}")
-    fun delete(@PathVariable id: Long) {
-        if(!cardRepository.existsById(id)) throw NoSuchElementException("Card id: $id not found.")
+    fun deleteCard(@PathVariable id: Long) {
+        if(!cardRepository.existsById(id)) throw NoSuchElementException("ID #$id not found.") //displays in terminal
         cardRepository.deleteById(id)
     }
 }
