@@ -1,0 +1,195 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto; /* Equal margins on top and bottom */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for the radio button inputs */
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin: 0; /* Remove default margin */
+}
+
+form legend {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add spacing below the legend */
+}
+
+form label {
+    font-weight: normal;
+    margin-right: 20px;
+    display: inline-block; /* Make radio buttons horizontal */
+}
+
+/* Ensure radio buttons and labels are aligned horizontally */
+form input[type="radio"] {
+    margin-right: 5px; /* Add spacing between radio button and label */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #2d7a30;
+}
+
+#results {
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Allows horizontal scrolling on small screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px; /* Reduced padding for thinner rows */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Hover effect for rows */
+}
+
+td img {
+    max-width: 60px; /* Smaller image size */
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto; /* Horizontal scroll for small screens */
+    }
+
+    th, td {
+        white-space: nowrap; /* Prevents text from wrapping */
+    }
+}
+
+/* Add these styles to your existing CSS */
+.gain-positive {
+    background-color: #4CAF50; /* Green background for positive gain */
+    color: white; /* White text */
+    font-weight: bold;
+}
+
+.gain-negative {
+    background-color: #f44336; /* Red background for negative gain */
+    color: white; /* White text */
+    font-weight: bold;
+}
+
+/* Add this to your existing CSS */
+#container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if the screen is too small */
+    gap: 20px; /* Adds space between the two elements */
+    max-width: 1200px; /* Adjust as needed */
+    margin: 20px auto; /* Centers the container */
+}
+
+#userInputsList {
+    flex: 1; /* Allows the input section to grow */
+    max-width: 400px; /* Adjust as needed */
+}
+
+#results {
+    flex: 2; /* Allows the results section to grow more than the input section */
+    max-width: 800px; /* Adjust as needed */
+}
+
+/* Ensure the table inside #results is responsive */
+#results table {
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if the screen is too small */
+    gap: 20px; /* Adds space between the two elements */
+    max-width: 1400px; /* Increased from 1200px to make the container wider */
+    margin: 20px auto; /* Centers the container */
+}
+
+#results {
+    flex: 2; /* Allows the results section to grow more than the input section */
+    max-width: 900px; /* Adjust as needed to make the results section wider */
+}
+
+/* Ensure the table inside #results is responsive */
+#results table {
+    width: 100%;
+}

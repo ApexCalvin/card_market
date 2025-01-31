@@ -34,7 +34,6 @@
 			<groupId>org.jetbrains.kotlin</groupId>
 			<artifactId>kotlin-stdlib</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -80,5 +79,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
