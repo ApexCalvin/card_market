@@ -1,6 +1,6 @@
-document.getElementById("saveButton").addEventListener("click", saveEntry);
+document.getElementById("saveButton").addEventListener("click", saveCard);
 
-function saveEntry() {
+function saveCard() {
 
     const card_set = document.getElementById("card_set").value;
     const card_collNum = document.getElementById("card_collNum").value;
