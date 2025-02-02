@@ -23,6 +23,8 @@ class PreLoadCards {
         val card3 = Card(cardSet = "3ed", collectorNumber = "282", foil = false, purchasePrice = 500.0)
         val card4 = Card(cardSet = "exp", collectorNumber = "17", foil = true, purchasePrice = 0.0)
         val card5 = Card(cardSet = "ltr", collectorNumber = "791", foil = true, purchasePrice = 100.0)
-        cardRepository.saveAll(listOf(card1, card2, card3, card4, card5))
+        val card6 = Card(cardSet = "dmu", collectorNumber = "107", foil = false, purchasePrice = 100.0)
+        val card7 = Card(cardSet = "c17", collectorNumber = "36", foil = true, purchasePrice = 40.0)
+        cardRepository.saveAll(listOf(card1, card2, card3, card4, card5, card6, card7))
     }
 }

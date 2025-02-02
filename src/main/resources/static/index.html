@@ -39,6 +39,7 @@
                 <li>
                     <button id="saveButton">Save</button>
                     <button id="getButton">Get</button>
+                    <button class="greyButtons" onClick="window.open('https://scryfall.com/', '_blank')">Look Up</button>            
                 </li>
             </ul>
 
@@ -52,6 +53,7 @@
                             <th>Purchase Price:</strong></th>
                             <th>Market Price:</strong></th>
                             <th><strong>Gain:</strong></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody id="display"></tbody>
@@ -61,5 +63,6 @@
         
         <script src="cardService_save.js"></script>
         <script src="cardService_fetch.js"></script>
+        <script src="cardService_delete.js"></script>
     </body>
 </html>
