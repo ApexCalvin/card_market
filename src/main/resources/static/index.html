@@ -13,22 +13,22 @@
             <ul id="userInputsList">
                 <li>
                     <label for="card_set">Set:</label>
-                    <input type="text" id="card_set" placeholder="cmm">
+                    <input type="text" id="card_set" placeholder="cmm" required>
                 </li>
                 <li>
                     <label for="card_collNum">Collector #</label>
-                    <input type="text" id="card_collNum" placeholder="396">
+                    <input type="text" id="card_collNum" placeholder="396" required>
                 </li>
                 <li>
                     <label for="card_purchasePrice">Purchase Price:</label>
-                    <input type="text" id="card_purchasePrice" placeholder="Type your purchase price...">
+                    <input type="text" id="card_purchasePrice" placeholder="Type your purchase price..." required>
                 </li>
-                <li> 
+                <li>
                     <form>
                         <fieldset>
                             <legend>Foil:</legend>
                             <label>
-                                <input type="radio" name="card_isFoil" value="false"> False
+                                <input type="radio" name="card_isFoil" value="false" checked> False
                             </label>
                             <label>
                                 <input type="radio" name="card_isFoil" value="true"> True
@@ -42,7 +42,7 @@
                     <button class="greyButtons" onClick="window.open('https://scryfall.com/', '_blank')">Look Up</button>            
                 </li>
             </ul>
-
+        
             <div id="results">
                 <h2>Collection:</h2>
                 <table>
