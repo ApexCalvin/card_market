@@ -12,5 +12,9 @@ Technologies: Kotlin/Java, Springboot, Maven, H2 db, JavaScript, HTML/CSS
 # Components Diagram
 ![Components UML](https://github.com/user-attachments/assets/3ef15275-b7b5-40e9-af10-3c62a9e0a2cb)
 
+# Microservices Architecture
+Custom Cache: `https://github.com/ApexCalvin/MyCacheService`
+![components_diagram](https://github.com/user-attachments/assets/08a84da9-79ba-4570-ad1b-48b7ae57e578)
+
 # UML Class Diagram
 ![UML Class Diagram](https://github.com/user-attachments/assets/36208c1a-c7fb-4b07-8d0e-13c92825a833)
